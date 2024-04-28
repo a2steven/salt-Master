@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-
+# to create code-server to use git for code 
 container_name=code-server-$USER
 password=$1
 port=$2
