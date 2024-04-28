@@ -1,0 +1,363 @@
+Filesystem           Size  Used Avail Use% Mounted on
+devtmpfs             932M     0  932M   0% /dev
+tmpfs                980M  4.0K  980M   1% /dev/shm
+tmpfs                980M   42M  939M   5% /run
+tmpfs                980M     0  980M   0% /sys/fs/cgroup
+/dev/sr0              13G   13G     0 100% /run/install/repo
+/dev/mapper/live-rw  3.9G  2.5G  1.4G  65% /
+tmpfs                980M   27M  953M   3% /tmp
+/dev/sda1             39G  3.8G   33G  11% /mnt/sysroot
+tmpfs                980M     0  980M   0% /mnt/sysroot/dev/shm
+mount: /tmp/vboxcdrom: WARNING: device write-protected, mounted read-only.
+** binding cdrom into jail: success
+--2024-04-22 19:31:10--  https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+Resolving dl.fedoraproject.org (dl.fedoraproject.org)... 38.145.60.24, 38.145.60.23, 38.145.60.22
+Connecting to dl.fedoraproject.org (dl.fedoraproject.org)|38.145.60.24|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 25128 (25K) [application/x-rpm]
+Saving to: 'epel-release-latest-8.noarch.rpm'
+
+     0K .......... .......... ....                            100% 3.59M=0.007s
+
+2024-04-22 19:31:10 (3.59 MB/s) - 'epel-release-latest-8.noarch.rpm' saved [25128/25128]
+
+Oracle Linux 8 BaseOS Latest (x86_64)            26 MB/s |  73 MB     00:02    
+Oracle Linux 8 Application Stream (x86_64)       27 MB/s |  55 MB     00:02    
+Latest Unbreakable Enterprise Kernel Release 6   48 MB/s |  90 MB     00:01    
+Last metadata expiration check: 0:00:11 ago on Mon Apr 22 19:31:41 2024.
+Dependencies resolved.
+================================================================================
+ Package             Architecture  Version            Repository           Size
+================================================================================
+Installing:
+ epel-release        noarch        8-19.el8           @commandline         25 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total size: 25 k
+Installed size: 35 k
+Downloading Packages:
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : epel-release-8-19.el8.noarch                           1/1 
+  Running scriptlet: epel-release-8-19.el8.noarch                           1/1 
+Many EPEL packages require the CodeReady Builder (CRB) repository.
+It is recommended that you run /usr/bin/crb enable to enable the CRB repository.
+
+Running in chroot, ignoring request: daemon-reload
+
+  Verifying        : epel-release-8-19.el8.noarch                           1/1 
+
+Installed:
+  epel-release-8-19.el8.noarch                                                  
+
+Complete!
+oraclelinux-release-el8-1.0-35.el8.x86_64
+Extra Packages for Enterprise Linux 8 - x86_64   12 MB/s |  16 MB     00:01    
+Last metadata expiration check: 0:00:04 ago on Mon Apr 22 19:32:03 2024.
+Dependencies resolved.
+================================================================================
+ Package        Arch        Version                Repository              Size
+================================================================================
+Installing:
+ yum-utils      noarch      4.0.21-23.0.1.el8      ol8_baseos_latest       75 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 75 k
+Installed size: 23 k
+Downloading Packages:
+yum-utils-4.0.21-23.0.1.el8.noarch.rpm          194 kB/s |  75 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           193 kB/s |  75 kB     00:00     
+Oracle Linux 8 BaseOS Latest (x86_64)           2.8 MB/s | 3.1 kB     00:00    
+Importing GPG key 0xAD986DA3:
+ Userid     : "Oracle OSS group (Open Source Software group) <build@oss.oracle.com>"
+ Fingerprint: 76FD 3DB1 3AB6 7410 B89D B10E 8256 2EA9 AD98 6DA3
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+Key imported successfully
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : yum-utils-4.0.21-23.0.1.el8.noarch                     1/1 
+  Running scriptlet: yum-utils-4.0.21-23.0.1.el8.noarch                     1/1 
+  Verifying        : yum-utils-4.0.21-23.0.1.el8.noarch                     1/1 
+
+Installed:
+  yum-utils-4.0.21-23.0.1.el8.noarch                                            
+
+Complete!
+** Finding UEK kernel...
+UEK kernel was found - 5.15.0-200.131.27.el8uek.x86_64
+Extra Packages for Enterprise Linux 8 - x86_64  197 kB/s |  27 kB     00:00    
+No match for argument: kernel-uek-devel-5.15.0-200.131.27.el8uek.x86_64
+Error: Unable to find a match: kernel-uek-devel-5.15.0-200.131.27.el8uek.x86_64
+** exit code: 1
+Installation uses kernel 4.18.0-513.5.1.el8_9.x86_64
+** Installing packages for building kernel modules...
+Last metadata expiration check: 0:00:03 ago on Mon Apr 22 19:32:16 2024.
+Package kernel-devel-4.18.0-513.5.1.el8_9.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 0:00:06 ago on Mon Apr 22 19:32:16 2024.
+Package kernel-headers-4.18.0-513.5.1.el8_9.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 0:00:09 ago on Mon Apr 22 19:32:16 2024.
+Package gcc-8.5.0-20.0.1.el8.x86_64 is already installed.
+Dependencies resolved.
+================================================================================
+ Package               Arch      Version             Repository            Size
+================================================================================
+Upgrading:
+ cpp                   x86_64    8.5.0-20.0.3.el8    ol8_appstream         10 M
+ gcc                   x86_64    8.5.0-20.0.3.el8    ol8_appstream         23 M
+ gcc-c++               x86_64    8.5.0-20.0.3.el8    ol8_appstream         12 M
+ gcc-gdb-plugin        x86_64    8.5.0-20.0.3.el8    ol8_appstream        129 k
+ gcc-plugin-annobin    x86_64    8.5.0-20.0.3.el8    ol8_appstream         44 k
+ libgcc                x86_64    8.5.0-20.0.3.el8    ol8_baseos_latest     91 k
+ libgomp               x86_64    8.5.0-20.0.3.el8    ol8_baseos_latest    217 k
+ libstdc++             x86_64    8.5.0-20.0.3.el8    ol8_baseos_latest    463 k
+ libstdc++-devel       x86_64    8.5.0-20.0.3.el8    ol8_appstream        2.1 M
+
+Transaction Summary
+================================================================================
+Upgrade  9 Packages
+
+Total download size: 49 M
+Downloading Packages:
+(1/9): libgcc-8.5.0-20.0.3.el8.x86_64.rpm       385 kB/s |  91 kB     00:00    
+(2/9): libgomp-8.5.0-20.0.3.el8.x86_64.rpm      758 kB/s | 217 kB     00:00    
+(3/9): libstdc++-8.5.0-20.0.3.el8.x86_64.rpm    1.3 MB/s | 463 kB     00:00    
+(4/9): gcc-c++-8.5.0-20.0.3.el8.x86_64.rpm       13 MB/s |  12 MB     00:00    
+(5/9): gcc-gdb-plugin-8.5.0-20.0.3.el8.x86_64.r 1.8 MB/s | 129 kB     00:00    
+(6/9): gcc-plugin-annobin-8.5.0-20.0.3.el8.x86_ 785 kB/s |  44 kB     00:00    
+(7/9): cpp-8.5.0-20.0.3.el8.x86_64.rpm          8.2 MB/s |  10 MB     00:01    
+(8/9): gcc-8.5.0-20.0.3.el8.x86_64.rpm           18 MB/s |  23 MB     00:01    
+(9/9): libstdc++-devel-8.5.0-20.0.3.el8.x86_64.  12 MB/s | 2.1 MB     00:00    
+--------------------------------------------------------------------------------
+Total                                            30 MB/s |  49 MB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Upgrading        : libgcc-8.5.0-20.0.3.el8.x86_64                        1/18 
+  Running scriptlet: libgcc-8.5.0-20.0.3.el8.x86_64                        1/18 
+  Upgrading        : libstdc++-8.5.0-20.0.3.el8.x86_64                     2/18 
+  Running scriptlet: libstdc++-8.5.0-20.0.3.el8.x86_64                     2/18 
+  Upgrading        : libstdc++-devel-8.5.0-20.0.3.el8.x86_64               3/18 
+  Upgrading        : cpp-8.5.0-20.0.3.el8.x86_64                           4/18 
+  Running scriptlet: cpp-8.5.0-20.0.3.el8.x86_64                           4/18 
+  Upgrading        : libgomp-8.5.0-20.0.3.el8.x86_64                       5/18 
+  Running scriptlet: libgomp-8.5.0-20.0.3.el8.x86_64                       5/18 
+  Upgrading        : gcc-8.5.0-20.0.3.el8.x86_64                           6/18 
+  Running scriptlet: gcc-8.5.0-20.0.3.el8.x86_64                           6/18 
+  Upgrading        : gcc-c++-8.5.0-20.0.3.el8.x86_64                       7/18 
+  Upgrading        : gcc-gdb-plugin-8.5.0-20.0.3.el8.x86_64                8/18 
+  Running scriptlet: gcc-gdb-plugin-8.5.0-20.0.3.el8.x86_64                8/18 
+  Upgrading        : gcc-plugin-annobin-8.5.0-20.0.3.el8.x86_64            9/18 
+  Running scriptlet: gcc-plugin-annobin-8.5.0-20.0.3.el8.x86_64            9/18 
+  Cleanup          : gcc-gdb-plugin-8.5.0-20.0.1.el8.x86_64               10/18 
+  Running scriptlet: gcc-gdb-plugin-8.5.0-20.0.1.el8.x86_64               10/18 
+  Cleanup          : gcc-c++-8.5.0-20.0.1.el8.x86_64                      11/18 
+  Cleanup          : gcc-plugin-annobin-8.5.0-20.0.1.el8.x86_64           12/18 
+  Running scriptlet: gcc-plugin-annobin-8.5.0-20.0.1.el8.x86_64           12/18 
+  Cleanup          : libstdc++-devel-8.5.0-20.0.1.el8.x86_64              13/18 
+  Cleanup          : libstdc++-8.5.0-20.0.1.el8.x86_64                    14/18 
+  Running scriptlet: libstdc++-8.5.0-20.0.1.el8.x86_64                    14/18 
+  Running scriptlet: gcc-8.5.0-20.0.1.el8.x86_64                          15/18 
+  Cleanup          : gcc-8.5.0-20.0.1.el8.x86_64                          15/18 
+  Running scriptlet: cpp-8.5.0-20.0.1.el8.x86_64                          16/18 
+  Cleanup          : cpp-8.5.0-20.0.1.el8.x86_64                          16/18 
+  Cleanup          : libgcc-8.5.0-20.0.1.el8.x86_64                       17/18 
+  Running scriptlet: libgcc-8.5.0-20.0.1.el8.x86_64                       17/18 
+  Running scriptlet: libgomp-8.5.0-20.0.1.el8.x86_64                      18/18 
+  Cleanup          : libgomp-8.5.0-20.0.1.el8.x86_64                      18/18 
+  Running scriptlet: libgomp-8.5.0-20.0.1.el8.x86_64                      18/18 
+  Verifying        : libgcc-8.5.0-20.0.3.el8.x86_64                        1/18 
+  Verifying        : libgcc-8.5.0-20.0.1.el8.x86_64                        2/18 
+  Verifying        : libgomp-8.5.0-20.0.3.el8.x86_64                       3/18 
+  Verifying        : libgomp-8.5.0-20.0.1.el8.x86_64                       4/18 
+  Verifying        : libstdc++-8.5.0-20.0.3.el8.x86_64                     5/18 
+  Verifying        : libstdc++-8.5.0-20.0.1.el8.x86_64                     6/18 
+  Verifying        : cpp-8.5.0-20.0.3.el8.x86_64                           7/18 
+  Verifying        : cpp-8.5.0-20.0.1.el8.x86_64                           8/18 
+  Verifying        : gcc-8.5.0-20.0.3.el8.x86_64                           9/18 
+  Verifying        : gcc-8.5.0-20.0.1.el8.x86_64                          10/18 
+  Verifying        : gcc-c++-8.5.0-20.0.3.el8.x86_64                      11/18 
+  Verifying        : gcc-c++-8.5.0-20.0.1.el8.x86_64                      12/18 
+  Verifying        : gcc-gdb-plugin-8.5.0-20.0.3.el8.x86_64               13/18 
+  Verifying        : gcc-gdb-plugin-8.5.0-20.0.1.el8.x86_64               14/18 
+  Verifying        : gcc-plugin-annobin-8.5.0-20.0.3.el8.x86_64           15/18 
+  Verifying        : gcc-plugin-annobin-8.5.0-20.0.1.el8.x86_64           16/18 
+  Verifying        : libstdc++-devel-8.5.0-20.0.3.el8.x86_64              17/18 
+  Verifying        : libstdc++-devel-8.5.0-20.0.1.el8.x86_64              18/18 
+
+Upgraded:
+  cpp-8.5.0-20.0.3.el8.x86_64                                                   
+  gcc-8.5.0-20.0.3.el8.x86_64                                                   
+  gcc-c++-8.5.0-20.0.3.el8.x86_64                                               
+  gcc-gdb-plugin-8.5.0-20.0.3.el8.x86_64                                        
+  gcc-plugin-annobin-8.5.0-20.0.3.el8.x86_64                                    
+  libgcc-8.5.0-20.0.3.el8.x86_64                                                
+  libgomp-8.5.0-20.0.3.el8.x86_64                                               
+  libstdc++-8.5.0-20.0.3.el8.x86_64                                             
+  libstdc++-devel-8.5.0-20.0.3.el8.x86_64                                       
+
+Complete!
+Last metadata expiration check: 0:00:22 ago on Mon Apr 22 19:32:16 2024.
+Package binutils-2.30-123.0.1.el8.x86_64 is already installed.
+Dependencies resolved.
+================================================================================
+ Package       Arch        Version                 Repository              Size
+================================================================================
+Upgrading:
+ binutils      x86_64      2.30-123.0.2.el8        ol8_baseos_latest      5.9 M
+
+Transaction Summary
+================================================================================
+Upgrade  1 Package
+
+Total download size: 5.9 M
+Downloading Packages:
+binutils-2.30-123.0.2.el8.x86_64.rpm             22 MB/s | 5.9 MB     00:00    
+--------------------------------------------------------------------------------
+Total                                            22 MB/s | 5.9 MB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Upgrading        : binutils-2.30-123.0.2.el8.x86_64                       1/2 
+  Running scriptlet: binutils-2.30-123.0.2.el8.x86_64                       1/2 
+  Running scriptlet: binutils-2.30-123.0.1.el8.x86_64                       2/2 
+  Cleanup          : binutils-2.30-123.0.1.el8.x86_64                       2/2 
+  Running scriptlet: binutils-2.30-123.0.1.el8.x86_64                       2/2 
+  Verifying        : binutils-2.30-123.0.2.el8.x86_64                       1/2 
+  Verifying        : binutils-2.30-123.0.1.el8.x86_64                       2/2 
+
+Upgraded:
+  binutils-2.30-123.0.2.el8.x86_64                                              
+
+Complete!
+Last metadata expiration check: 0:00:27 ago on Mon Apr 22 19:32:16 2024.
+Package make-1:4.2.1-11.el8.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 0:00:31 ago on Mon Apr 22 19:32:16 2024.
+Package elfutils-libelf-devel-0.189-3.el8.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 0:00:34 ago on Mon Apr 22 19:32:16 2024.
+Dependencies resolved.
+================================================================================
+ Package        Architecture     Version                   Repository      Size
+================================================================================
+Installing:
+ dkms           noarch           3.0.13-1.el8              epel            84 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 84 k
+Installed size: 183 k
+Downloading Packages:
+dkms-3.0.13-1.el8.noarch.rpm                    609 kB/s |  84 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           371 kB/s |  84 kB     00:00     
+Extra Packages for Enterprise Linux 8 - x86_64  1.6 MB/s | 1.6 kB     00:00    
+Importing GPG key 0x2F86D6A1:
+ Userid     : "Fedora EPEL (8) <epel@fedoraproject.org>"
+ Fingerprint: 94E2 79EB 8D8F 25B2 1810 ADF1 21EA 45AB 2F86 D6A1
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-8
+Key imported successfully
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : dkms-3.0.13-1.el8.noarch                               1/1 
+  Running scriptlet: dkms-3.0.13-1.el8.noarch                               1/1 
+Running in chroot, ignoring request: daemon-reload
+
+  Verifying        : dkms-3.0.13-1.el8.noarch                               1/1 
+
+Installed:
+  dkms-3.0.13-1.el8.noarch                                                      
+
+Complete!
+Last metadata expiration check: 0:00:39 ago on Mon Apr 22 19:32:16 2024.
+Package make-1:4.2.1-11.el8.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 0:00:42 ago on Mon Apr 22 19:32:16 2024.
+Package bzip2-1.0.6-26.el8.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 0:00:45 ago on Mon Apr 22 19:32:16 2024.
+Package perl-4:5.26.3-422.el8.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 0:00:48 ago on Mon Apr 22 19:32:16 2024.
+Package cloud-init-23.1.1-10.0.1.el8.noarch is already installed.
+Dependencies resolved.
+================================================================================
+ Package        Arch       Version                      Repository         Size
+================================================================================
+Upgrading:
+ cloud-init     noarch     23.1.1-11.0.2.el8_9.1        ol8_appstream     1.2 M
+
+Transaction Summary
+================================================================================
+Upgrade  1 Package
+
+Total download size: 1.2 M
+Downloading Packages:
+cloud-init-23.1.1-11.0.2.el8_9.1.noarch.rpm     7.9 MB/s | 1.2 MB     00:00    
+--------------------------------------------------------------------------------
+Total                                           7.8 MB/s | 1.2 MB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Running scriptlet: cloud-init-23.1.1-11.0.2.el8_9.1.noarch                1/1 
+  Upgrading        : cloud-init-23.1.1-11.0.2.el8_9.1.noarch                1/2 
+  Running scriptlet: cloud-init-23.1.1-11.0.2.el8_9.1.noarch                1/2 
+  Running scriptlet: cloud-init-23.1.1-10.0.1.el8.noarch                    2/2 
+  Cleanup          : cloud-init-23.1.1-10.0.1.el8.noarch                    2/2 
+  Running scriptlet: cloud-init-23.1.1-10.0.1.el8.noarch                    2/2 
+Running in chroot, ignoring request: daemon-reload
+
+  Verifying        : cloud-init-23.1.1-11.0.2.el8_9.1.noarch                1/2 
+  Verifying        : cloud-init-23.1.1-10.0.1.el8.noarch                    2/2 
+
+Upgraded:
+  cloud-init-23.1.1-11.0.2.el8_9.1.noarch                                       
+
+Complete!
+** unbinding cdrom from jail...

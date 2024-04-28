@@ -1,0 +1,73 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@10.2.4
+2 info using node@v18.19.1
+3 timing npm:load:whichnode Completed in 3ms
+4 timing config:load:defaults Completed in 3ms
+5 timing config:load:file:/usr/lib/node_modules/npm/npmrc Completed in 11ms
+6 timing config:load:builtin Completed in 11ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 3ms
+10 timing config:load:file:/root/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/etc/npmrc Completed in 2ms
+13 timing config:load:global Completed in 2ms
+14 timing config:load:setEnvs Completed in 1ms
+15 timing config:load Completed in 22ms
+16 timing npm:load:configload Completed in 22ms
+17 timing config:load:flatten Completed in 2ms
+18 timing npm:load:mkdirpcache Completed in 1ms
+19 timing npm:load:mkdirplogs Completed in 0ms
+20 verbose title npm install typescript typescript-language-server
+21 verbose argv "install" "--global" "typescript" "typescript-language-server"
+22 timing npm:load:setTitle Completed in 0ms
+23 timing npm:load:display Completed in 0ms
+24 verbose logfile logs-max:10 dir:/root/.npm/_logs/2024-04-23T17_36_29_366Z-
+25 verbose logfile /root/.npm/_logs/2024-04-23T17_36_29_366Z-debug-0.log
+26 timing npm:load:logFile Completed in 6ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 1ms
+29 timing npm:load Completed in 49ms
+30 timing config:load:flatten Completed in 0ms
+31 timing arborist:ctor Completed in 1ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 11ms
+34 timing idealTree:userRequests Completed in 3ms
+35 silly idealTree buildDeps
+36 silly fetch manifest typescript@*
+37 silly fetch manifest typescript-language-server@*
+38 silly placeDep ROOT typescript@ OK for:  want: *
+39 silly placeDep ROOT typescript-language-server@ OK for:  want: *
+40 timing idealTree:#root Completed in 925272ms
+41 timing idealTree:node_modules/typescript Completed in 1ms
+42 timing idealTree:node_modules/typescript-language-server Completed in 0ms
+43 timing idealTree:buildDeps Completed in 925275ms
+44 timing idealTree:fixDepFlags Completed in 1ms
+45 timing idealTree Completed in 925290ms
+46 timing command:install Completed in 925305ms
+47 verbose type system
+48 verbose stack FetchError: request to https://registry.npmjs.org/typescript failed, reason: connect ETIMEDOUT 2606:4700::6810:1b22:443
+48 verbose stack     at ClientRequest.<anonymous> (/usr/lib/node_modules/npm/node_modules/minipass-fetch/lib/index.js:130:14)
+48 verbose stack     at ClientRequest.emit (node:events:517:28)
+48 verbose stack     at _destroy (node:_http_client:882:13)
+48 verbose stack     at onSocketNT (node:_http_client:902:5)
+48 verbose stack     at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+49 verbose cwd /root
+50 verbose Linux 5.15.0-200.131.27.el8uek.x86_64
+51 verbose node v18.19.1
+52 verbose npm  v10.2.4
+53 error code ETIMEDOUT
+54 error syscall connect
+55 error errno ETIMEDOUT
+56 error network request to https://registry.npmjs.org/typescript failed, reason: connect ETIMEDOUT 2606:4700::6810:1b22:443
+57 error network This is a problem related to network connectivity.
+57 error network In most cases you are behind a proxy or have bad network settings.
+57 error network
+57 error network If you are behind a proxy, please make sure that the
+57 error network 'proxy' config is set properly.  See: 'npm help config'
+58 verbose exit 1
+59 timing npm Completed in 925480ms
+60 verbose unfinished npm timer reify 1713893789538
+61 verbose unfinished npm timer reify:loadTrees 1713893789550
+62 verbose code 1
+63 error A complete log of this run can be found in: /root/.npm/_logs/2024-04-23T17_36_29_366Z-debug-0.log

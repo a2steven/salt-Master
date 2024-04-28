@@ -1,0 +1,143 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@10.2.4
+2 info using node@v18.19.1
+3 timing npm:load:whichnode Completed in 3ms
+4 timing config:load:defaults Completed in 4ms
+5 timing config:load:file:/usr/lib/node_modules/npm/npmrc Completed in 10ms
+6 timing config:load:builtin Completed in 10ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 3ms
+10 timing config:load:file:/root/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/etc/npmrc Completed in 1ms
+13 timing config:load:global Completed in 1ms
+14 timing config:load:setEnvs Completed in 1ms
+15 timing config:load Completed in 21ms
+16 timing npm:load:configload Completed in 21ms
+17 timing config:load:flatten Completed in 3ms
+18 timing npm:load:mkdirpcache Completed in 1ms
+19 timing npm:load:mkdirplogs Completed in 1ms
+20 verbose title npm install express-generator
+21 verbose argv "install" "--global" "express-generator"
+22 timing npm:load:setTitle Completed in 1ms
+23 timing npm:load:display Completed in 1ms
+24 verbose logfile logs-max:10 dir:/root/.npm/_logs/2024-04-27T16_34_41_555Z-
+25 verbose logfile /root/.npm/_logs/2024-04-27T16_34_41_555Z-debug-0.log
+26 timing npm:load:logFile Completed in 7ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 50ms
+30 timing config:load:flatten Completed in 0ms
+31 timing arborist:ctor Completed in 1ms
+32 silly logfile start cleaning logs, removing 28 files
+33 timing idealTree:init Completed in 5ms
+34 timing idealTree:userRequests Completed in 3ms
+35 silly idealTree buildDeps
+36 silly fetch manifest express-generator@*
+37 silly logfile done cleaning log files
+38 http fetch GET 200 https://registry.npmjs.org/express-generator 467ms (cache miss)
+39 silly placeDep ROOT express-generator@4.16.1 OK for:  want: *
+40 silly fetch manifest commander@2.15.1
+41 silly fetch manifest ejs@2.6.1
+42 silly fetch manifest minimatch@3.0.4
+43 silly fetch manifest mkdirp@0.5.1
+44 silly fetch manifest sorted-object@2.0.1
+45 http fetch GET 200 https://registry.npmjs.org/commander 55ms (cache miss)
+46 http fetch GET 200 https://registry.npmjs.org/sorted-object 96ms (cache miss)
+47 http fetch GET 200 https://registry.npmjs.org/ejs 98ms (cache miss)
+48 http fetch GET 200 https://registry.npmjs.org/mkdirp 103ms (cache miss)
+49 http fetch GET 200 https://registry.npmjs.org/minimatch 109ms (cache miss)
+50 timing idealTree:#root Completed in 586ms
+51 silly placeDep node_modules/express-generator commander@2.15.1 OK for: express-generator@4.16.1 want: 2.15.1
+52 silly placeDep node_modules/express-generator ejs@2.6.1 OK for: express-generator@4.16.1 want: 2.6.1
+53 silly placeDep node_modules/express-generator minimatch@3.0.4 OK for: express-generator@4.16.1 want: 3.0.4
+54 silly fetch manifest brace-expansion@^1.1.7
+55 silly placeDep node_modules/express-generator mkdirp@0.5.1 OK for: express-generator@4.16.1 want: 0.5.1
+56 silly fetch manifest minimist@0.0.8
+57 silly placeDep node_modules/express-generator sorted-object@2.0.1 OK for: express-generator@4.16.1 want: 2.0.1
+58 http fetch GET 200 https://registry.npmjs.org/brace-expansion 41ms (cache miss)
+59 http fetch GET 200 https://registry.npmjs.org/minimist 43ms (cache miss)
+60 timing idealTree:node_modules/express-generator Completed in 51ms
+61 timing idealTree:node_modules/express-generator/node_modules/commander Completed in 0ms
+62 timing idealTree:node_modules/express-generator/node_modules/ejs Completed in 0ms
+63 silly placeDep node_modules/express-generator brace-expansion@1.1.11 OK for: minimatch@3.0.4 want: ^1.1.7
+64 silly fetch manifest balanced-match@^1.0.0
+65 silly fetch manifest concat-map@0.0.1
+66 http fetch GET 200 https://registry.npmjs.org/concat-map 38ms (cache miss)
+67 http fetch GET 200 https://registry.npmjs.org/balanced-match 41ms (cache miss)
+68 timing idealTree:node_modules/express-generator/node_modules/minimatch Completed in 45ms
+69 silly placeDep node_modules/express-generator balanced-match@1.0.2 OK for: brace-expansion@1.1.11 want: ^1.0.0
+70 silly placeDep node_modules/express-generator concat-map@0.0.1 OK for: brace-expansion@1.1.11 want: 0.0.1
+71 timing idealTree:node_modules/express-generator/node_modules/brace-expansion Completed in 3ms
+72 timing idealTree:node_modules/express-generator/node_modules/balanced-match Completed in 0ms
+73 timing idealTree:node_modules/express-generator/node_modules/concat-map Completed in 0ms
+74 silly placeDep node_modules/express-generator minimist@0.0.8 OK for: mkdirp@0.5.1 want: 0.0.8
+75 timing idealTree:node_modules/express-generator/node_modules/mkdirp Completed in 2ms
+76 timing idealTree:node_modules/express-generator/node_modules/minimist Completed in 0ms
+77 timing idealTree:node_modules/express-generator/node_modules/sorted-object Completed in 0ms
+78 timing idealTree:buildDeps Completed in 688ms
+79 timing idealTree:fixDepFlags Completed in 1ms
+80 timing idealTree Completed in 699ms
+81 timing reify:loadTrees Completed in 700ms
+82 timing reify:diffTrees Completed in 2ms
+83 silly reify moves {}
+84 timing reify:retireShallow Completed in 1ms
+85 timing reify:createSparse Completed in 5ms
+86 timing reify:loadBundles Completed in 0ms
+87 silly tarball no local data for express-generator@https://registry.npmjs.org/express-generator/-/express-generator-4.16.1.tgz. Extracting by manifest.
+88 silly tarball no local data for minimist@https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz. Extracting by manifest.
+89 silly tarball no local data for concat-map@https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz. Extracting by manifest.
+90 silly tarball no local data for balanced-match@https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz. Extracting by manifest.
+91 silly tarball no local data for brace-expansion@https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz. Extracting by manifest.
+92 silly tarball no local data for sorted-object@https://registry.npmjs.org/sorted-object/-/sorted-object-2.0.1.tgz. Extracting by manifest.
+93 silly tarball no local data for mkdirp@https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz. Extracting by manifest.
+94 silly tarball no local data for minimatch@https://registry.npmjs.org/minimatch/-/minimatch-3.0.4.tgz. Extracting by manifest.
+95 silly tarball no local data for ejs@https://registry.npmjs.org/ejs/-/ejs-2.6.1.tgz. Extracting by manifest.
+96 silly tarball no local data for commander@https://registry.npmjs.org/commander/-/commander-2.15.1.tgz. Extracting by manifest.
+97 http fetch GET 200 https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz 122ms (cache miss)
+98 timing reifyNode:node_modules/express-generator/node_modules/concat-map Completed in 138ms
+99 http fetch GET 200 https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz 122ms (cache miss)
+100 timing reifyNode:node_modules/express-generator/node_modules/balanced-match Completed in 139ms
+101 http fetch GET 200 https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz 135ms (cache miss)
+102 timing reifyNode:node_modules/express-generator/node_modules/brace-expansion Completed in 153ms
+103 http fetch GET 200 https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz 142ms (cache miss)
+104 timing reifyNode:node_modules/express-generator/node_modules/minimist Completed in 158ms
+105 http fetch GET 200 https://registry.npmjs.org/sorted-object/-/sorted-object-2.0.1.tgz 148ms (cache miss)
+106 timing reifyNode:node_modules/express-generator/node_modules/sorted-object Completed in 166ms
+107 http fetch GET 200 https://registry.npmjs.org/minimatch/-/minimatch-3.0.4.tgz 174ms (cache miss)
+108 timing reifyNode:node_modules/express-generator/node_modules/minimatch Completed in 194ms
+109 http fetch GET 200 https://registry.npmjs.org/commander/-/commander-2.15.1.tgz 174ms (cache miss)
+110 timing reifyNode:node_modules/express-generator/node_modules/commander Completed in 195ms
+111 http fetch GET 200 https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz 178ms (cache miss)
+112 warn deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+113 timing reifyNode:node_modules/express-generator/node_modules/mkdirp Completed in 198ms
+114 http fetch GET 200 https://registry.npmjs.org/express-generator/-/express-generator-4.16.1.tgz 188ms (cache miss)
+115 timing reifyNode:node_modules/express-generator Completed in 204ms
+116 http fetch GET 200 https://registry.npmjs.org/ejs/-/ejs-2.6.1.tgz 185ms (cache miss)
+117 timing reifyNode:node_modules/express-generator/node_modules/ejs Completed in 204ms
+118 timing reify:unpack Completed in 205ms
+119 timing reify:unretire Completed in 0ms
+120 timing build:queue Completed in 1ms
+121 timing build:link:node_modules/express-generator/node_modules/mkdirp Completed in 2ms
+122 timing build:link:node_modules/express-generator Completed in 3ms
+123 timing build:link Completed in 3ms
+124 timing build:deps Completed in 4ms
+125 timing build Completed in 4ms
+126 timing reify:build Completed in 5ms
+127 timing reify:trash Completed in 0ms
+128 timing reify Completed in 942ms
+129 silly ADD node_modules/express-generator
+130 silly ADD node_modules/express-generator/node_modules/minimist
+131 silly ADD node_modules/express-generator/node_modules/concat-map
+132 silly ADD node_modules/express-generator/node_modules/balanced-match
+133 silly ADD node_modules/express-generator/node_modules/brace-expansion
+134 silly ADD node_modules/express-generator/node_modules/sorted-object
+135 silly ADD node_modules/express-generator/node_modules/mkdirp
+136 silly ADD node_modules/express-generator/node_modules/minimatch
+137 silly ADD node_modules/express-generator/node_modules/ejs
+138 silly ADD node_modules/express-generator/node_modules/commander
+139 timing command:install Completed in 945ms
+140 verbose exit 0
+141 timing npm Completed in 1445ms
+142 info ok
